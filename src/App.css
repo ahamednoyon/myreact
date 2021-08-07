@@ -50,3 +50,21 @@
 .btn-style:hover{
   background: rgb(255, 187, 0);
 }
+
+.movie-style{
+  background: rgba(255, 119, 187, 0.651);
+  padding: 40px 0px;
+  border-radius: 5px;
+}
+
+.movie-style button{
+  padding: 10px;
+  background: rgba(14, 190, 14, 0.603);
+  color: #fff;
+  border: none;
+  transition: .2s;
+}
+
+.movie-style button:hover{
+  background: rgb(61, 61, 209);
+}

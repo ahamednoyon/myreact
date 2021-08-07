@@ -1,4 +1,7 @@
+
+import React, { useState } from 'react';
 import './App.css';
+
 
 function App() {
   // const friendsName =['Rahim', 'Karim', 'Jarim', 'Lorim', 'Rahim2', 'Karim2', 'Jarim2', 'Lorim2'];
@@ -27,12 +30,36 @@ function App() {
         {
           products.map(pd => <Product name={pd.name} price={pd.price}></Product>)
         }
-          
+       
+        <MovieCounter></MovieCounter>
+        <MovieCounter></MovieCounter>
+        <MovieCounter></MovieCounter>
+        <MovieCounter></MovieCounter>
+        <MovieCounter></MovieCounter>
         </main>
+        
+
       </div>
     </section>
   );
 }
+
+function MovieCounter(){
+  const [count, setCount] = useState(5);
+  const handleClick = () => setCount(count + 1);
+
+  return(
+
+    <div className="movie-style">
+
+      <h2>The number of movie {count}</h2>
+      <button onClick={handleClick}>Add Movie</button>
+      
+    </div>
+
+  )
+}
+
 
 
 function Product(props){
@@ -45,6 +72,8 @@ function Product(props){
   )
 
 }
+
+
 
 
 
