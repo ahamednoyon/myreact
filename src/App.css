@@ -68,3 +68,9 @@
 .movie-style button:hover{
   background: rgb(61, 61, 209);
 }
+
+.user-style{
+  background: tomato;
+  color: #fff;
+  border-radius: 5px;
+}
